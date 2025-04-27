@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="font-[inter]">
+    <!-- -----HEADER--------- -->
+     <div class="fixed left-0 z-[999] min-h-[60px] w-full bg-[#2D3E57] py-[12px]">
+        <div class="mx-auto w-full max-w-[1440px] px-[20px]">
+          <div class="flex w-full items-center justify-between px-[30px]">
+            <div class="flex items-center">
+              <a href="">
+                <img src="/assets/logo.svg" alt="" width="115" height="44">
+              </a>
+            </div>
+
+            <div>
+              <button class="bg-[#548FBC] w-full rounded-[4px] px-[15px] py-[10px]
+              transition-transform hover:opacity-90 disabled:pointer-events-none disabled:cursor-not-allowed
+              disabled:opacity-70 cursor-pointer">
+                  <div class="relative flex items-center justify-center gap-[20px]">
+                      <p class="text-[13px] font-bold leading-[1.2em] text-white">
+                         Sign In
+                      </p>
+                  </div>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+     </div>
+
+     <!-- -----HERO--------- -->
+     <div class="flex-1 py-[80px] bg-[#EAECED]">
+      <div>
+        <div class="flex w-full justify-center pt-[60px] md:pt-[90px]">
+          <div class="flex w-full flex-col items-center overflow-x-hidden">
+
+            <div class="pb-[120px]">
+              <h1 class="text-[26px] font-bold leading-[1.2em] tracking-normal text-[#2D3E57]">
+                Create an account
+              </h1>
+            </div>
+
+            <div class="relative -right-[20px] -top-[75px] w-full">
+              <div class="absolute right-1/2">
+                <div>
+                  <div>
+                    <div class="relative z-40 flex items-center justify-center
+                    gap-[10px] rounded-[50px] px-[12px] py-[8px] bg-white">
+                      <span class="whitespace-nowrap leading-[1.2em] tracking-normal
+                      text-[14px] font-bold text-[#2D3E57]">
+                          1/2
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute right-0 top-[18px] z-20 h-[1px] w-1/2 border-t border-[#2d3e5733]">
+                  
+              </div>
+            </div>
+
+            <div class="mx-auto w-full max-w-[1440px] px-[20px]">
+              <div class="flex w-full flex-col items-center gap-[30px]">
+                <div>
+                  <p class="text-[15px] font-bold leading-[1.2] tracking-normal text-[#2D3E57]">
+                    Select authentication method
+                  </p>
+                </div>
+
+                <div class="mx-auto w-full max-w-[480px]">
+                  <div class="w-full">
+                    <div>
+                      <div class="relative flex justify-between" id="buttonGroup">
+                        <div class="absolute bottom-0 right-[142px] h-[1px] w-[33px] bg-[#2d3e5733]">
+                        </div>
+
+                        <div class="absolute bottom-0 left-[133px] h-[1px] w-[33px] bg-[#2d3e5733]">
+
+                        </div>
+
+                        <button class="tab-btn rounded-tl-[4px] rounded-tr-[4px] border-x border-t
+                        border-[#2d3e5733] px-[10px] py-[11px] text-[13px] outline-none md:px-[30px]
+                        bg-white font-bold leading-[1.2em] tracking-normal text-[#2D3E57] 
+                        cursor-pointer">
+                            Email Code
+                        </button>
+
+                        <button class="tab-btn rounded-tl-[4px] rounded-tr-[4px] border-x border-t
+                        border-[#2d3e5733] px-[10px] py-[11px] text-[13px] outline-none md:px-[30px]
+                        bg-[#EAECED] font-bold leading-[1.2em] tracking-normal text-[#2D3E57]
+                        cursor-pointer">
+                            Social Login
+                        </button>
+
+                        <button class="tab-btn rounded-tl-[4px] rounded-tr-[4px] border-x border-t
+                        border-[#2d3e5733] px-[10px] py-[11px] text-[13px] outline-none md:px-[30px]
+                        bg-[#EAECED] font-bold leading-[1.2em] tracking-normal text-[#2D3E57]
+                        cursor-pointer">
+                            Web3 Wallet
+                        </button>
+                      </div>
+
+                      <div>
+                        <div class="rounded-bl-[4px] rounded-br-[4px] border-x border-b border-[#2d3e5733]
+                        bg-[#EAECED] p-[30px]">
+                            <div>
+                              <form action="">
+                                <p class="text-[#1F2D42] mb-[5px] text-[13px] leading-[1.2em] tracking-normal">
+                                    Email Address
+                                </p>
+
+                                <div class="relative">
+                                  <div class="relative">
+                                    <input type="email" placeholder="Please provide email"
+                                    class="w-full rounded-[4px] border p-[10px] text-[13px]
+                                    font-bold leading-[1.2em] tracking-normal text-[#1F2D42] outline-none
+                                    placeholder:font-light border-[#2d3e5733] bg-white">
+                                  </div>
+
+                                  <div class="!relative !left-0 -right-[100px]
+                                  top-[5px] my-[3px] text-[11px] font-bold text-[#D9486E] ">
+
+                                  </div>
+
+                                  <div class="mb-[20px] mt-[14px] flex items-center gap-[8px]">
+                                    <div class="inline-flex items-center gap-[6px]">
+                                       <label class="relative flex cursor-pointer items-center
+                                       gap-[6px] rounded-full" for="terms">
+                                          <input type="checkbox" name="terms"
+                                          class="border-black before:content[''] before:bg-blue-gray-500
+                                          bg-transparent peer relative h-[16px] cursor-pointer">
+                                      </label>
+                                    </div>
+
+                                    <p class="text-[13px] text-[#1F2D42]">
+                                      I accept
+                                      <span class="mr-[4px] cursor-pointer underline">
+                                          Terms and Conditions
+                                      </span>
+                                      and
+                                      <span class="mr-[4px] cursor-pointer underline">
+                                        Privacy Policy
+                                      </span>
+                                    </p>
+                                  </div>
+
+                                  <button class="bg-[#2D3E57] text-white w-full rounded-[4px]
+                                  px-[15px] py-[10px] transition-transform hover:opacity-90 cursor-pointer ">
+                                      <div class="relative flex items-center justify-center gap-[20px]">
+                                          <p>Send me an Email with Code</p>
+                                      </div>
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+     </div>
+
+
+     <!-- ----------FOOTER-------------- -->
+      <div class="bg-[#2D3E57]">
+        <div class="mx-auto w-full max-w-[1440px] px-[20px]">
+          <div class="flex items-center justify-between px-[30px] py-[20px]
+          text-[12px] font-normal leading-[1.3em] tracking-normal text-white">
+            <p>Trumarket @2025</p>
+            <p>v 0.10</p>
+          </div>
+        </div>
+
+      </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
