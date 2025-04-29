@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/style.css">
+    <title>Vite App</title>
+  </head>
+
+  
+  <body class="font-[inter]">
+    <!-- ----------HEADER-------------- -->
+    <div class="fixed left-0 z-[999] w-full bg-tm-charcoal-blue py-3">
+        <div class="mx-auto max-w-[1440px] px-5">
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0 sm:px-[30px]">
+            
+            <!-- Logo + Nav -->
+            <div class="flex flex-col sm:flex-row items-center w-full sm:w-auto gap-2 sm:gap-8">
+              <!-- Logo -->
+              <a href="supplier-dashboard.html">
+                <img src="/assets/logo.svg" alt="Logo" width="115" height="44" />
+              </a>
+      
+              <!-- Nav -->
+              <nav class="flex justify-center sm:justify-start">
+                <ul class="flex gap-4 sm:gap-6">
+                  <li>
+                    <a
+                      href="supplier-dashboard.html"
+                      class="text-[12px] font-bold capitalize leading-[1em] tracking-[0.02em] text-tm-white"
+                    >
+                      Dashboard
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+      
+            <!-- Right Icons -->
+            <div class="flex items-center gap-3">
+              <button aria-label="Notifications">
+                <img src="/assets/bell.svg" alt="Notifications" width="24" height="24" />
+              </button>
+              <a href="#">
+                <img src="/assets/person-icon.svg" alt="Profile" width="25" height="25" />
+              </a>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- -----HERO--------- -->
+    <div class="flex-1 py-[80px] bg-tm-main-blue">
+        <div class="overflow-x-hidden pt-[30px]">
+            <div class="mx-auto w-full max-w-[1440px] px-[20px]">
+                <div class="flex flex-col gap-[6px] pb-[40px]">
+                  <h1 class="text-[26px] font-bold leading-[1.2em] text-tm-charcoal-blue">
+                    Create Shipment Agreement
+                  </h1>
+
+                  <span class="text-tm-charcoal-blue text-[13px] font-light leading-[1.2em]">
+                    Submitted agreement will be sent to selected the buyer. 
+                    <br> 
+                    After his confirmation, the smart contract will be created and you will be able to track the shipment.
+                  </span>
+                </div>
+
+
+
+                <div>
+                  <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow">
+    
+                    <!-- Step Indicator -->
+                    <div class="inline-flex items-center text-xs font-semibold border border-gray-300 rounded-full px-3 py-1 text-tm-charcoal-blue mb-4">
+                      1/6 Product
+                    </div>
+                
+                    <!-- Title -->
+                    <h1 class="text-2xl sm:text-3xl font-bold text-tm-charcoal-blue mb-1">
+                      What do you want to sell?
+                    </h1>
+                
+                    <!-- Subtitle -->
+                    <p class="text-sm text-tm-charcoal-blue mb-6">
+                      This helps buyers know what you're offering.
+                    </p>
+                
+                    <!-- Form -->
+                    <form class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <!-- Product Name -->
+                      <div>
+                        <label class="block text-sm font-medium text-tm-charcoal-blue mb-1">Name the product</label>
+                        <input type="text" placeholder="e.g. Apple" class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:bg-tm-charcoal-blue" />
+                      </div>
+                
+                      <!-- Variety -->
+                      <div>
+                        <label class="block text-sm font-medium text-tm-charcoal-blue mb-1">Describe the variety</label>
+                        <input type="text" placeholder="e.g. Gala" class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:bg-tm-charcoal-blue" />
+                      </div>
+                
+                      <!-- Quality -->
+                      <div>
+                        <label class="block text-sm font-medium text-tm-charcoal-blue mb-1">Select Quality</label>
+                        <select class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:bg-tm-charcoal-blue">
+                          <option>CAT1</option>
+                          <option>CAT2</option>
+                          <option>Industrial</option>
+                        </select>
+                      </div>
+                
+                      <!-- Presentation -->
+                      <div>
+                        <label class="block text-sm font-medium text-tm-charcoal-blue mb-1">Describe the presentation</label>
+                        <input type="text" placeholder="e.g. 10kg box" class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:bg-tm-charcoal-blue" />
+                      </div>
+                    </form>
+                
+                    <!-- Next Step Button -->
+                    <div class="mt-8">
+                      <button type="button" class="bg-tm-charcoal-blue text-white px-6 py-3 rounded-lg text-sm font-medium hover:opacity-90 flex items-center gap-2">
+                        Next Step
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+                
+                <!-- Collapsed Future Steps -->
+                  <div class="max-w-4xl mx-auto mt-6 space-y-4">
+
+                    <!-- Step 2 -->
+                    <div class="bg-white border border-gray-200 rounded-xl px-6 py-4 shadow-sm flex justify-between items-center">
+                      <div class="text-sm font-medium text-gray-700">2/6 Where and when</div>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white border border-gray-200 rounded-xl px-6 py-4 shadow-sm flex justify-between items-center">
+                      <div class="text-sm font-medium text-gray-700">3/6 Your data</div>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="bg-white border border-gray-200 rounded-xl px-6 py-4 shadow-sm flex justify-between items-center">
+                      <div class="text-sm font-medium text-gray-700">4/6 Buyer</div>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="bg-white border border-gray-200 rounded-xl px-6 py-4 shadow-sm flex justify-between items-center">
+                      <div class="text-sm font-medium text-gray-700">5/6 Summary</div>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="bg-white border border-gray-200 rounded-xl px-6 py-4 shadow-sm flex justify-between items-center">
+                      <div class="text-sm font-medium text-gray-700">6/6 Confirmation</div>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+
+                  </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ----------FOOTER-------------- -->
+    <div class="bg-[#2D3E57]">
+      <div class="mx-auto w-full max-w-[1440px] px-5">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-between px-6 py-5 text-xs font-normal leading-[1.3em] tracking-normal text-white space-y-2 sm:space-y-0"
+        >
+          <p>Trumarket ©2025</p>
+          <p>v 0.1.0</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
