@@ -4,4 +4,13 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        createAccount: './create-account.html',
+        // add more pages here
+      }
+    }
+  }
 })
