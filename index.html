@@ -7,32 +7,36 @@
     <title>Vite App</title>
   </head>
   <body class="font-[inter]">
-    <!-- -----HEADER--------- -->
-     <div class="fixed left-0 z-[999] min-h-[60px] w-full bg-[#2D3E57] py-[12px]">
-        <div class="mx-auto w-full max-w-[1440px] px-[20px]">
-          <div class="flex w-full items-center justify-between px-[30px]">
-            <div class="flex items-center">
-              <a href="">
-                <img src="/assets/logo.svg" alt="" width="115" height="44">
-              </a>
-            </div>
-
-            <div>
-              <button class="bg-[#548FBC] w-full rounded-[4px] px-[15px] py-[10px]
-              transition-transform hover:opacity-90 disabled:pointer-events-none disabled:cursor-not-allowed
-              disabled:opacity-70 cursor-pointer">
-                  <div class="relative flex items-center justify-center gap-[20px]">
-                      <p class="text-[13px] font-bold leading-[1.2em] text-white">
-                         Sign In
-                      </p>
-                  </div>
-              </button>
-            </div>
-
+    
+     <!-- ----------HEADER-------------- -->
+<div class="fixed left-0 z-[999] w-full bg-[#2D3E57] py-3">
+  <div class="mx-auto w-full max-w-[1440px] px-5">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0 sm:px-[30px]">
+      
+      <!-- Logo -->
+      <div class="flex items-center justify-center sm:justify-start w-full sm:w-auto">
+        <a href="">
+          <img src="/assets/logo.svg" alt="Logo" width="115" height="44">
+        </a>
+      </div>
+      
+      <!-- Sign In Button -->
+      <div class="sm:w-full sm:w-auto flex justify-center sm:justify-end">
+        <button class="bg-[#548FBC] rounded px-4 py-2 w-full sm:w-auto
+          transition-transform hover:opacity-90 disabled:pointer-events-none disabled:cursor-not-allowed
+          disabled:opacity-70 cursor-pointer">
+          <div class="flex items-center justify-center gap-4">
+            <p class="text-sm font-bold text-white leading-tight">
+              Sign In
+            </p>
           </div>
+        </button>
+      </div>
 
-        </div>
-     </div>
+    </div>
+  </div>
+</div>
+
 
      <!-- -----HERO--------- -->
      <div class="flex-1 py-[80px] bg-[#EAECED]">
@@ -107,7 +111,7 @@
                       </div>
 
                       <div>
-                        <div class="rounded-bl-[4px] rounded-br-[4px] border-x border-b border-[#2d3e5733]
+                        <div id="emailForm" class="rounded-bl-[4px] rounded-br-[4px] border-x border-b border-[#2d3e5733]
                         bg-[#EAECED] p-[30px]">
                             <div>
                               <form action="">
@@ -160,6 +164,183 @@
                               </form>
                             </div>
                         </div>
+
+                        <div id="socialLoginForm" class="rounded-bl-[4px] rounded-br-[4px] border-x border-b border-[#2d3e5733]
+                        bg-[#EAECED] p-[30px] hidden">
+                            <div>
+                              <form action="">
+                                <div class="mb-[20px] mt-[14px] flex items-center gap-[8px]">
+                                  <div class="inline-flex items-center gap-[6px]">
+                                     <label class="relative flex cursor-pointer items-center
+                                     gap-[6px] rounded-full" for="terms">
+                                        <input type="checkbox" name="terms"
+                                        class="border-black before:content[''] before:bg-blue-gray-500
+                                        bg-transparent peer relative h-[16px] cursor-pointer">
+                                    </label>
+                                  </div>
+
+                                  <p class="text-[13px] text-[#1F2D42]">
+                                    I accept
+                                    <span class="mr-[4px] cursor-pointer underline">
+                                        Terms and Conditions
+                                    </span>
+                                    and
+                                    <span class="mr-[4px] cursor-pointer underline">
+                                      Privacy Policy
+                                    </span>
+                                  </p>
+                                </div>
+                                
+
+                                <div class="flex flex-wrap justify-between gap-[14px] md:flex-nowrap">
+                                  <button class="bg-[#2D3E57] text-white w-full rounded-[4px]
+                                  px-[15px] py-[10px] transition-transform hover:opacity-90 cursor-pointer">
+
+                                    <div class="relative flex items-center justify-center gap-[20px]">
+                                      <div class="flex w-full items-center justify-between">
+                                        <p class="text-[13px] font-semibold leading-[1.2em]">
+                                          Google
+                                        </p>
+
+                                        <img src="assets/google-icon.webp" alt="" width="25" height="25">
+
+
+                                      </div>
+
+                                    </div>
+
+
+                                  </button>
+
+                                  <button class="bg-[#2D3E57] text-white w-full rounded-[4px]
+                                  px-[15px] py-[10px] transition-transform hover:opacity-90 cursor-pointer">
+
+                                    <div class="relative flex items-center justify-center gap-[20px]">
+                                      <div class="flex w-full items-center justify-between">
+                                        <p class="text-[13px] font-semibold leading-[1.2em]">
+                                          Facebook
+                                        </p>
+
+                                        <img src="assets/facebook-icon.webp" alt="" width="25" height="25">
+
+
+                                      </div>
+
+                                    </div>
+
+
+                                  </button>
+
+                                  <button class="bg-[#2D3E57] text-white w-full rounded-[4px]
+                                  px-[15px] py-[10px] transition-transform hover:opacity-90 cursor-pointer">
+
+                                    <div class="relative flex items-center justify-center gap-[20px]">
+                                      <div class="flex w-full items-center justify-between">
+                                        <p class="text-[13px] font-semibold leading-[1.2em]">
+                                          Linkedin
+                                        </p>
+
+                                        <img src="assets/linkedin-icon.webp" alt="" width="25" height="25">
+
+
+                                      </div>
+
+                                    </div>
+
+
+                                  </button>
+
+                                </div>
+                              </form>
+                            </div>
+                        </div>
+
+                        <div id="web3WalletForm" class="rounded-bl-[4px] rounded-br-[4px] border-x border-b border-[#2d3e5733]
+                        bg-[#EAECED] p-[30px] hidden">
+                            <div>
+                              <form action="">
+                                <p class="text-[#1F2D42] mb-[5px] text-[13px] leading-[1.2em] tracking-normal">
+                                    Email Address
+                                </p>
+
+                                <div class="relative">
+                                  <div class="relative">
+                                    <input type="email" placeholder="Please provide email"
+                                    class="w-full rounded-[4px] border p-[10px] text-[13px]
+                                    font-bold leading-[1.2em] tracking-normal text-[#1F2D42] outline-none
+                                    placeholder:font-light border-[#2d3e5733] bg-white">
+                                  </div>
+
+                                  <div class="!relative !left-0 -right-[100px]
+                                  top-[5px] my-[3px] text-[11px] font-bold text-[#D9486E] ">
+
+                                  </div>
+
+                                  <div class="mb-[20px] mt-[14px] flex items-center gap-[8px]">
+                                    <div class="inline-flex items-center gap-[6px]">
+                                       <label class="relative flex cursor-pointer items-center
+                                       gap-[6px] rounded-full" for="terms">
+                                          <input type="checkbox" name="terms"
+                                          class="border-black before:content[''] before:bg-blue-gray-500
+                                          bg-transparent peer relative h-[16px] cursor-pointer">
+                                      </label>
+                                    </div>
+
+                                    <p class="text-[13px] text-[#1F2D42]">
+                                      I accept
+                                      <span class="mr-[4px] cursor-pointer underline">
+                                          Terms and Conditions
+                                      </span>
+                                      and
+                                      <span class="mr-[4px] cursor-pointer underline">
+                                        Privacy Policy
+                                      </span>
+                                    </p>
+                                  </div>
+
+                                  <div class="flex flex-wrap justify-between gap-[14px] md:flex-nowrap">
+                                    <button class="bg-[#2D3E57] text-white w-full rounded-[4px]
+                                    px-[15px] py-[10px] transition-transform hover:opacity-90 cursor-pointer">
+  
+                                      <div class="relative flex items-center justify-center gap-[20px]">
+                                        <div class="flex w-full items-center justify-between">
+                                          <p class="text-[13px] font-semibold leading-[1.2em]">
+                                            MetaMask
+                                          </p>
+  
+                                          <img src="assets/metamask-icon.webp" alt="" width="25" height="25">
+  
+  
+                                        </div>
+  
+                                      </div>
+  
+  
+                                    </button>
+  
+                                    <button class="bg-[#2D3E57] text-white w-full rounded-[4px]
+                                    px-[15px] py-[10px] transition-transform hover:opacity-90 cursor-pointer">
+  
+                                      <div class="relative flex items-center justify-center gap-[20px]">
+                                        <div class="flex w-full items-center justify-between">
+                                          <p class="text-[13px] font-semibold leading-[1.2em]">
+                                            Wallet Connect
+                                          </p>
+  
+                                          <img src="assets/walletconnect-icon.webp" alt="" width="25" height="25">
+  
+  
+                                        </div>
+  
+                                      </div>
+  
+  
+                                    </button>  
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                        </div>
                       </div>
                     </div>
 
@@ -176,15 +357,18 @@
      </div>
 
 
-     <!-- ----------FOOTER-------------- -->
-      <div class="bg-[#2D3E57]">
-        <div class="mx-auto w-full max-w-[1440px] px-[20px]">
-          <div class="flex items-center justify-between px-[30px] py-[20px]
-          text-[12px] font-normal leading-[1.3em] tracking-normal text-white">
-            <p>Trumarket @2025</p>
-            <p>v 0.10</p>
-          </div>
-        </div>
+     
+      <!-- ----------FOOTER-------------- -->
+  <div class="bg-[#2D3E57]">
+    <div class="mx-auto w-full max-w-[1440px] px-5">
+      <div class="flex flex-col sm:flex-row items-center justify-between px-6 py-5
+        text-xs font-normal leading-[1.3em] tracking-normal text-white space-y-2 sm:space-y-0">
+        <p>Trumarket ©2025</p>
+        <p>v 0.1.0</p>
+      </div>
+    </div>
+  </div>
+
 
       </div>
     <script type="module" src="/src/main.js"></script>
