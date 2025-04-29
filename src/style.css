@@ -7,6 +7,7 @@
     --color-brand-200: #EAECED;
     --color-brand-300: #5898C7;
     --color-brand-500: #2D3E57;
+    --color-green-100: #278F7C
   }
   
   @layer utilities {
@@ -30,5 +31,9 @@
 
     .text-tm-charcoal-blue{
         color: var(--color-brand-500);
+    }
+
+    .bg-custom-green {
+      color: var(--color-green-100);
     }
   }
