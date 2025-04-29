@@ -9,6 +9,7 @@ export default defineConfig({
       input: {
         main: './index.html',
         createAccount: './create-account.html',
+        supplierDashboard: './supplier-dashboard.html'
         // add more pages here
       }
     }
